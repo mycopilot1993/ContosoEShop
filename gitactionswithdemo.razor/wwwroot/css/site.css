@@ -46,7 +46,7 @@ body {
   --card-bg: #ffffff;
   --card-border: #e9ecef;
   --bg-gradient: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
-  --card-gradient: linear-gradient(180deg,#ffffff 0%, #ffffff 100%);
+  --card-gradient: linear-gradient(180deg, #ffffff 0%, #ffffff 100%);
 }
 
 .theme-slate {
@@ -57,8 +57,8 @@ body {
   --accent: #3b82f6;
   --card-bg: #0b1220;
   --card-border: #19232f;
-  --bg-gradient: linear-gradient(135deg,#071027 0%, #0f1724 40%, #13202a 100%);
-  --card-gradient: linear-gradient(180deg,#071027 0%, #0f1724 60%);
+  --bg-gradient: linear-gradient(135deg, #071027 0%, #0f1724 40%, #13202a 100%);
+  --card-gradient: linear-gradient(180deg, #071027 0%, #0f1724 60%);
 }
 
 .theme-sunrise {
@@ -69,8 +69,8 @@ body {
   --accent: #fb7a2a;
   --card-bg: #fffaf2;
   --card-border: #fde5d0;
-  --bg-gradient: linear-gradient(135deg,#fff7ed 0%, #ffe2c7 45%, #ffd6a5 100%);
-  --card-gradient: linear-gradient(180deg,#fffdf8 0%, #fff6ec 100%);
+  --bg-gradient: linear-gradient(135deg, #fff7ed 0%, #ffe2c7 45%, #ffd6a5 100%);
+  --card-gradient: linear-gradient(180deg, #fffdf8 0%, #fff6ec 100%);
 }
 
 .theme-forest {
@@ -81,8 +81,8 @@ body {
   --accent: #22c55e;
   --card-bg: #ffffff;
   --card-border: #d1fae5;
-  --bg-gradient: linear-gradient(135deg,#e6fff2 0%, #c8f8df 45%, #e6fff2 100%);
-  --card-gradient: linear-gradient(180deg,#f7fff9 0%, #ecfff2 100%);
+  --bg-gradient: linear-gradient(135deg, #e6fff2 0%, #c8f8df 45%, #e6fff2 100%);
+  --card-gradient: linear-gradient(180deg, #f7fff9 0%, #ecfff2 100%);
 }
 
 .theme-ocean {
@@ -93,8 +93,8 @@ body {
   --accent: #00b4d8;
   --card-bg: #ffffff;
   --card-border: #cfeefb;
-  --bg-gradient: linear-gradient(135deg,#eaf9ff 0%, #cfeefb 45%, #e6f7ff 100%);
-  --card-gradient: linear-gradient(180deg,#ffffff 0%, #f2fbff 100%);
+  --bg-gradient: linear-gradient(135deg, #eaf9ff 0%, #cfeefb 45%, #e6f7ff 100%);
+  --card-gradient: linear-gradient(180deg, #ffffff 0%, #f2fbff 100%);
 }
 
 .theme-pastel {
@@ -105,8 +105,8 @@ body {
   --accent: #ffd6a5;
   --card-bg: #ffffff;
   --card-border: #ffeedd;
-  --bg-gradient: linear-gradient(135deg,#fffaf6 0%, #fff0f6 45%, #fffaf6 100%);
-  --card-gradient: linear-gradient(180deg,#ffffff 0%, #fffaf6 100%);
+  --bg-gradient: linear-gradient(135deg, #fffaf6 0%, #fff0f6 45%, #fffaf6 100%);
+  --card-gradient: linear-gradient(180deg, #ffffff 0%, #fffaf6 100%);
 }
 
 body {
@@ -144,11 +144,13 @@ body,
 }
 
 /* Ensure cards clip overflowing images/content */
-.card { overflow: hidden; }
+.card {
+  overflow: hidden;
+}
 
 .navbar,
 .footer {
-  background: linear-gradient(90deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02)), var(--bg-gradient, var(--bg));
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02)), var(--bg-gradient, var(--bg));
 }
 
 .btn-primary {
@@ -161,30 +163,68 @@ body,
 }
 
 /* Theme picker swatches */
-.theme-swatch { display:flex; align-items:center; gap:0.5rem; padding:0.25rem 0.5rem; }
-.theme-swatch .swatch { width:18px; height:18px; border-radius:50%; border:1px solid rgba(0,0,0,0.12); box-shadow: inset 0 0 0 1px rgba(255,255,255,0.02); }
-.swatch-default { background: linear-gradient(135deg,#ffffff 0%, #f8fafc 100%); }
-.swatch-slate { background: linear-gradient(135deg,#071027 0%, #0f1724 60%); }
-.swatch-sunrise { background: linear-gradient(135deg,#fff7ed 0%, #ffd6a5 100%); }
-.swatch-forest { background: linear-gradient(135deg,#e6fff2 0%, #c8f8df 60%); }
-.swatch-ocean { background: linear-gradient(135deg,#eaf9ff 0%, #cfeefb 60%); }
-.swatch-pastel { background: linear-gradient(135deg,#fffaf6 0%, #fff0f6 60%); }
+.theme-swatch {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.theme-swatch .swatch {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.02);
+}
+
+.swatch-default {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+}
+
+.swatch-slate {
+  background: linear-gradient(135deg, #071027 0%, #0f1724 60%);
+}
+
+.swatch-sunrise {
+  background: linear-gradient(135deg, #fff7ed 0%, #ffd6a5 100%);
+}
+
+.swatch-forest {
+  background: linear-gradient(135deg, #e6fff2 0%, #c8f8df 60%);
+}
+
+.swatch-ocean {
+  background: linear-gradient(135deg, #eaf9ff 0%, #cfeefb 60%);
+}
+
+.swatch-pastel {
+  background: linear-gradient(135deg, #fffaf6 0%, #fff0f6 60%);
+}
 
 /* focus-visible outline for accessibility */
-.theme-swatch:focus { outline: none; }
-.theme-swatch:focus-visible { box-shadow: 0 0 0 3px rgba(37,140,251,0.25); border-radius: 0.25rem; }
+.theme-swatch:focus {
+  outline: none;
+}
+
+.theme-swatch:focus-visible {
+  box-shadow: 0 0 0 3px rgba(37, 140, 251, 0.25);
+  border-radius: 0.25rem;
+}
 
 /* aria-pressed active state */
-.theme-swatch[aria-pressed="true"] { background: rgba(0,0,0,0.04); }
+.theme-swatch[aria-pressed="true"] {
+  background: rgba(0, 0, 0, 0.04);
+}
 
 /* Top panel styles */
 .top-panel {
   /* stronger panel with subtle border and shadow to separate from background */
-  background: linear-gradient(90deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02)), rgba(0,0,0,0.02);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.02)), rgba(0, 0, 0, 0.02);
   padding: 1.25rem;
   border: 1px solid var(--card-border);
   border-radius: 0.5rem;
-  box-shadow: 0 6px 18px rgba(2,6,23,0.28);
+  box-shadow: 0 6px 18px rgba(2, 6, 23, 0.28);
   backdrop-filter: blur(6px);
 }
 
@@ -194,14 +234,29 @@ body,
   font-size: 1.5rem;
   color: var(--text);
 }
+
 .top-panel-sub {
   margin-bottom: 0;
   color: var(--muted);
 }
 
 /* Theme-aware panel adjustments */
-.theme-slate .top-panel { background: linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)), rgba(10,16,24,0.35); }
-.theme-sunrise .top-panel { background: linear-gradient(90deg, rgba(255,255,255,0.6), rgba(255,255,255,0.4)), rgba(255,235,205,0.18); }
-.theme-forest .top-panel { background: linear-gradient(90deg, rgba(255,255,255,0.6), rgba(255,255,255,0.4)), rgba(225,255,235,0.08); }
-.theme-ocean .top-panel { background: linear-gradient(90deg, rgba(255,255,255,0.6), rgba(255,255,255,0.4)), rgba(225,250,255,0.08); }
-.theme-pastel .top-panel { background: linear-gradient(90deg, rgba(255,255,255,0.6), rgba(255,255,255,0.4)), rgba(255,245,240,0.08); }
+.theme-slate .top-panel {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01)), rgba(10, 16, 24, 0.35);
+}
+
+.theme-sunrise .top-panel {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.4)), rgba(255, 235, 205, 0.18);
+}
+
+.theme-forest .top-panel {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.4)), rgba(225, 255, 235, 0.08);
+}
+
+.theme-ocean .top-panel {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.4)), rgba(225, 250, 255, 0.08);
+}
+
+.theme-pastel .top-panel {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.4)), rgba(255, 245, 240, 0.08);
+}
