@@ -1,0 +1,6 @@
+@gitactionswithdbdemo_HostAddress = http://localhost:5171
+
+GET {{gitactionswithdbdemo_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
